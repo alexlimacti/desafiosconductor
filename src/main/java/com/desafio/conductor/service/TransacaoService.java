@@ -115,18 +115,6 @@ public class TransacaoService {
         transacaoRepository.save(transacao);
     }
 
-    public void bloqueio(Long idConta){
-        Contas conta = contaService.getOne(idConta);
-        conta.setFlagAtivo(false);
-        contaService.save(conta);
-    }
-
-    public void desbloqueio(Long idConta){
-        Contas conta = contaService.getOne(idConta);
-        conta.setFlagAtivo(true);
-        contaService.save(conta);
-    }
-
     public String saque(SaqueDTO saqueDTO){
         String confirmacao = "";
         Contas conta = contaService.getOne(saqueDTO.getIdconta());

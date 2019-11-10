@@ -40,19 +40,9 @@ public class TransacaoResource {
     }
 
     @PostMapping("/novatransacaocartao")
-    public ResponseEntity novaTransacaoCartao(@RequestBody TransacoesCartaoDTO transacoesCartaoDTO){
+    public ResponseEntity novaTransacaoCartao(@RequestBody TransacoesCartaoDTO transacoesCartaoDTO) {
         transacaoService.transacaoCartao(transacoesCartaoDTO);
         return ResponseEntity.ok().build();
-    }
-
-    @GetMapping("/bloqueioconta")
-    public ResponseEntity bloqueioConta(@RequestBody Long idconta){
-        return ResponseEntity.ok("Conta bloqueada com sucesso!");
-    }
-
-    @GetMapping("/desbloqueioconta")
-    public ResponseEntity desbloqueioConta(@RequestBody Long idconta){
-        return ResponseEntity.ok("Conta desbloqueada com sucesso!");
     }
 
     @GetMapping("/layout")

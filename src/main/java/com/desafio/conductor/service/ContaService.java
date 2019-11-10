@@ -48,4 +48,16 @@ public class ContaService {
         return csd;
     }
 
+    public void bloqueio(Long idConta){
+        Contas conta = contaRepository.getOne(idConta);
+        conta.setFlagAtivo(false);
+        contaRepository.save(conta);
+    }
+
+    public void desbloqueio(Long idConta){
+        Contas conta = contaRepository.getOne(idConta);
+        conta.setFlagAtivo(true);
+        contaRepository.save(conta);
+    }
+
 }

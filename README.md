@@ -33,7 +33,7 @@ dataNascimento	Data
 
 ## O que esperamos como escopo mínimo:
 
-- [x]  Implementar path que realiza a criação de uma conta;
+- [ ]  Implementar path que realiza a criação de uma conta;
 - [x]  Implementar path que realiza operação de depósito em uma conta;
 - [x]  Implementar path que realiza operação de consulta de saldo em determinada conta;
 - [x]  Implementar path que realiza operação de saque em uma conta;
@@ -79,18 +79,16 @@ Deve-se desenvolver uma aplicação que acesse o banco de dados e gere um arquiv
 - [ ] Elaborar testes;
 
 # API
-- [x] eProcessos e eProtocolos
-- [x] Autorização do Gestor em Documentos Fiscais
-- [x] GED (Gestão Eletrônica de Documentos
-- [x] Solicitação de cadastro de Fornecedores
-- [x] Solicitação de adiantamento de despesas
-- [x] Autorização do Gestor em adiantamento de despesas
-- [x] Controle de Prestação de Contas
-- [x] Aprovação de Prestação de Contas
-- [x] Controle de Equipamentos do TI
+- [x] transacoes/deposito
+- [x] transacoes/saque
+- [x] transacoes/novatransacaocartao
+- [x] transacoes/layout?datalayout={datalayout}
+- [x] transacoes/extrato/{idconta}/{datainicial}/{datafinal}
+- [x] contas/saldo/{idconta}
+- [x] contas/bloqueiaconta
+- [x] contas/desbloqueiaconta
 
 # O que vamos avaliar:
-
 * Seu código;
 * Script de banco;
 * Organização;
