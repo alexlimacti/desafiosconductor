@@ -1,4 +1,5 @@
 # Desafios Técnico Conductor
+Passo a passo: INSTRUCOES.md
 
 # Desafio Técnico 01
 
@@ -85,8 +86,8 @@ Deve-se desenvolver uma aplicação que acesse o banco de dados e gere um arquiv
 - [x] transacoes/layout?datalayout={datalayout}
 - [x] transacoes/extrato/{idconta}/{datainicial}/{datafinal}
 - [x] contas/saldo/{idconta}
-- [x] contas/bloqueiaconta
-- [x] contas/desbloqueiaconta
+- [x] contas/bloqueioconta?idconta={idConta}
+- [x] contas/desbloqueioconta?idconta={idConta}
 
 # O que vamos avaliar:
 * Seu código;
