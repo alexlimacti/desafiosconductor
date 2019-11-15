@@ -65,8 +65,7 @@ public class TransacaoService {
         String conteudo = "";
         List<Transacoes> listTransacoes = findByDataTransacao(dataLayout);
         for(Transacoes t:listTransacoes){
-            if(t.getCartao() != null)
-                conteudo = conteudo + getCartaoLayout(t);
+            conteudo = (t.getCartao() != null) ? conteudo + getCartaoLayout(t):"";
         }
         File arquivo = new File("cartaolayout.txt");
         FileWriter f = new FileWriter(arquivo, false);
@@ -118,8 +117,8 @@ public class TransacaoService {
     public String saque(SaqueDTO saqueDTO){
         String confirmacao = "";
         Contas conta = contaService.getOne(saqueDTO.getIdconta());
-        if(conta.getLimiteSaqueDiario().doubleValue() <= saqueDTO.getValorsaque().doubleValue() ||
-                conta.getSaldo().doubleValue() <= saqueDTO.getValorsaque().doubleValue()) {
+        if(conta.getSaldo().doubleValue() >= saqueDTO.getValorsaque().doubleValue() &&
+                conta.getLimiteSaqueDiario().doubleValue() >= saqueDTO.getValorsaque().doubleValue()) {
             NumberFormat pf = NumberFormat.getCurrencyInstance();
             conta.setSaldo(conta.getSaldo().subtract(saqueDTO.getValorsaque()));
             contaService.save(conta);

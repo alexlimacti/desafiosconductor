@@ -8,7 +8,7 @@ public class TransacoesCartaoDTO {
     private Date dataTransacao;
     private Date horaTransacao;
     private BigDecimal valor;
-    private Integer cartao;
+    private Long cartao;
 
     public Date getDataTransacao() {
         return dataTransacao;
@@ -34,11 +34,11 @@ public class TransacoesCartaoDTO {
         this.valor = valor;
     }
 
-    public Integer getCartao() {
+    public Long getCartao() {
         return cartao;
     }
 
-    public void setCartao(Integer cartao) {
+    public void setCartao(Long cartao) {
         this.cartao = cartao;
     }
 }

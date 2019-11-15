@@ -23,12 +23,12 @@ public class Contas implements Serializable {
     private BigDecimal limiteSaqueDiario;
     private boolean flagAtivo;
     private Integer tipoConta;
-    private Integer cartao;
+    private Long cartao;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataCriacao;
 
-    public Contas(Pessoas idPessoa, BigDecimal saldo, BigDecimal limiteSaqueDiario, boolean flagAtivo, TipoConta tipoConta, Date dataCriacao, Integer cartao) {
+    public Contas(Pessoas idPessoa, BigDecimal saldo, BigDecimal limiteSaqueDiario, boolean flagAtivo, TipoConta tipoConta, Date dataCriacao, Long cartao) {
         super();
         this.idPessoa = idPessoa;
         this.saldo = saldo;
@@ -102,11 +102,11 @@ public class Contas implements Serializable {
         this.dataCriacao = dataCriacao;
     }
 
-    public Integer getCartao() {
+    public Long getCartao() {
         return cartao;
     }
 
-    public void setCartao(Integer cartao) {
+    public void setCartao(Long cartao) {
         this.cartao = cartao;
     }
 

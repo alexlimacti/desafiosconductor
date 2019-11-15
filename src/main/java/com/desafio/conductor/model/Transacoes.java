@@ -27,7 +27,7 @@ public class Transacoes implements Serializable {
     @Temporal(TemporalType.TIME)
     private Date horaTransacao;
 
-    private Integer cartao;
+    private Long cartao;
 
 
     public static long getSerialVersionUID() {
@@ -74,11 +74,11 @@ public class Transacoes implements Serializable {
         this.horaTransacao = horaTransacao;
     }
 
-    public Integer getCartao() {
+    public Long getCartao() {
         return cartao;
     }
 
-    public void setCartao(Integer cartao) {
+    public void setCartao(Long cartao) {
         this.cartao = cartao;
     }
 
