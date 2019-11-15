@@ -34,7 +34,7 @@ dataNascimento	Data
 
 ## O que esperamos como escopo mínimo:
 
-- [ ]  Implementar path que realiza a criação de uma conta;
+- [x]  Implementar path que realiza a criação de uma conta;
 - [x]  Implementar path que realiza operação de depósito em uma conta;
 - [x]  Implementar path que realiza operação de consulta de saldo em determinada conta;
 - [x]  Implementar path que realiza operação de saque em uma conta;
@@ -80,14 +80,15 @@ Deve-se desenvolver uma aplicação que acesse o banco de dados e gere um arquiv
 - [ ] Elaborar testes;
 
 # API
-- [x] transacoes/deposito
-- [x] transacoes/saque
-- [x] transacoes/novatransacaocartao
-- [x] transacoes/layout?datalayout={datalayout}
-- [x] transacoes/extrato/{idconta}/{datainicial}/{datafinal}
-- [x] contas/saldo/{idconta}
-- [x] contas/bloqueioconta?idconta={idConta}
-- [x] contas/desbloqueioconta?idconta={idConta}
+- [x] post transacoes/deposito
+- [x] post transacoes/saque
+- [x] post transacoes/novatransacaocartao
+- [x] get transacoes/layout?datalayout={datalayout}
+- [x] get transacoes/extrato/{idconta}/{datainicial}/{datafinal}
+- [x] post contas/
+- [x] get contas/saldo/{idconta}
+- [x] post contas/bloqueioconta?idconta={idConta}
+- [x] post contas/desbloqueioconta?idconta={idConta}
 
 # O que vamos avaliar:
 * Seu código;
