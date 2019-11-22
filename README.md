@@ -1,5 +1,6 @@
 # Desafios Técnico Conductor
-Passo a passo: INSTRUCOES.md
+Encontrei as questões na net e por conta resolvi desenvolver os desafios.
+Por conta disso, a parte da documentação não será efetuada.
 
 # Desafio Técnico 01
 
